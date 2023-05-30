@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>R.M.K Energy Meter Dashboard</title>
+	<style>
+		body {
+			background-color: #F0FFF0;
+		}
+		header {
+			background-color: #008000;
+			color: #FFF;
+			padding: 20px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		header img {
+			height: 100px;
+			margin-right: 10px;
+		}
+		footer {
+			background-color: #FFFFE0;
+			color: #333;
+			padding: 10px;
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			margin: 50px;
+		}
+		.button {
+			background-color: #FFFF00;
+			color: #333;
+			padding: 50px;
+			margin: 20px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			box-shadow: 3px 3px 5px #333;
+			transition: box-shadow 0.3s;
+		}
+		.button:hover {
+			box-shadow: 5px 5px 10px #333;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/RMK_Engineering_College.gif" alt="College Logo" height="100">
+		<h1>R.M.K Energy Meter Dashboard</h1>
+	</header>
+	<div class="container">
+		<button class="button" onclick="window.location.href='https://thingspeak.com/channels/2100169/private_show'">New Block 1</button>
+		<button class="button" onclick="window.location.href='https://thingspeak.com/channels/2100316/private_show'">New Block 2</button>
+		<button class="button" onclick="window.location.href='https://thingspeak.com/channels/2103120/private_show'">PV Block</button>
+		<button class="button" onclick="window.location.href='https://thingspeak.com/channels/2103124/private_show'">RM Block CSE</button>
+		<button class="button" onclick="window.location.href='building5.html'">RM Block IT</button>
+	</div>
+	<footer>
+		<p>&copy; 2023 College Energy Meter Dashboard</p>
+	</footer>
+</body>
+</html>
